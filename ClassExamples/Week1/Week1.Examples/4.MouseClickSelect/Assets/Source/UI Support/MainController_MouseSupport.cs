@@ -19,6 +19,7 @@ public partial class MainController : MonoBehaviour {
             bool hit = Physics.Raycast(MainCamera.ScreenPointToRay(Input.mousePosition), out hitInfo);
             if (hit)
             {
+                
                 if (mSelectedObject != null)
                 {
                     SetSelectedColor(1f);

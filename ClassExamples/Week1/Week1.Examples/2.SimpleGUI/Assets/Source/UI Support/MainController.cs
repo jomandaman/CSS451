@@ -27,7 +27,8 @@ public class MainController : MonoBehaviour {
         ShowSphereToggle.onValueChanged.AddListener(ShowSphere);
 
         // now initialize the sphere reference
-        mTheSphere = GameObject.Find("MySphere");
+        // mTheSphere = transform.Find("MySphere").GetComponent<ShowSphere>(); // C# reference to component 
+        mTheSphere = GameObject.Find("MySphere"); // This looks through entire scene, more expensive
         Debug.Assert(mTheSphere != null);
 	}
 	
