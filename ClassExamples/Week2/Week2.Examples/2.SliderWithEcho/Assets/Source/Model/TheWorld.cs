@@ -30,6 +30,7 @@ public class TheWorld : MonoBehaviour  {
     }
 
     public float GetSelectedRadius() {
+        // if (mSelectedSphere != null) return 0;
         return mSelectedSphere.transform.localScale.x; // assume x,y,z are the same
     }
 

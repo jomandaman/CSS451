@@ -39,6 +39,7 @@ public class ObjectControl : MonoBehaviour
         mObjectToControl = g;
         // mObjectSizeSlider.value = g.transform.localScale.x; // assume the xyz are the same.
         mUILabel.text = g.name;
+        mObjectSizeSlider.value = g.transform.localScale.x;
         SetSelectedColor(0f);
     }
 
