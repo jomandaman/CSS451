@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Scene version="1" xmlns="http://pantherkitty.software/xml/unity-scene/1.0">
+  <meta>
+    <value-abbreviation before="&#xA;" after=" •¬ " />
+    <value-abbreviation before="Instance" after="¡" />
+    <value-abbreviation before="UnityEngine." after="µ." />
+    <value-abbreviation before="System." after="§." />
+    <type-abbreviation before="UnityEngine." after="µ." />
+    <type-abbreviation before="System." after="§." />
+  </meta>
+  <GameObject name="Main Camera" tag="MainCamera" id="0x000075AE" layer="0" activeInHierarchy="True" isStatic="False">
+    <Transform id="0x000075B6" position="(0.00, 17.30, -39.90)" rotation="(22.59, 0.00, 0.00)" scale="(1.00, 1.00, 1.00)" />
+    <components>
+      <Behaviour type="µ.Camera" id="0x000075B4" enabled="True" isActiveAndEnabled="True" />
+      <Behaviour type="µ.FlareLayer" id="0x000075B2" enabled="True" isActiveAndEnabled="True" />
+      <Behaviour type="µ.AudioListener" id="0x000075B0" enabled="True" isActiveAndEnabled="True">
+        <extends>µ.AudioBehaviour</extends>
+      </Behaviour>
+    </components>
+  </GameObject>
+  <GameObject name="Directional Light" id="0x00007562" layer="0" activeInHierarchy="True" isStatic="False">
+    <Transform id="0x00007566" position="(0.00, 3.00, 0.00)" rotation="(50.00, 330.00, 0.00)" scale="(1.00, 1.00, 1.00)" />
+    <components>
+      <Behaviour type="µ.Light" id="0x00007564" enabled="True" isActiveAndEnabled="True" />
+    </components>
+  </GameObject>
+  <GameObject name="TheWorld" id="0x000075A2" layer="0" activeInHierarchy="True" isStatic="False">
+    <Transform id="0x000075A6" position="(0.00, 0.00, 0.00)" rotation="(0.00, 0.00, 0.00)" scale="(1.00, 1.00, 1.00)" />
+    <components>
+      <MonoBehaviour type="TheWorld" id="0x000075A4" enabled="True" isActiveAndEnabled="True" />
+    </components>
+  </GameObject>
+  <GameObject name="BaseNode" id="0x0000752C" layer="0" activeInHierarchy="True" isStatic="False">
+    <Transform id="0x00007530" position="(0.00, 0.00, 0.00)" rotation="(0.00, 0.00, 0.00)" scale="(1.00, 1.00, 1.00)" />
+    <components>
+      <MonoBehaviour type="SceneNode" id="0x0000752E" enabled="True" isActiveAndEnabled="True" />
+    </components>
+    <gameobjects>
+      <GameObject name="PrimitiveList" id="0x0000759E" layer="0" activeInHierarchy="True" isStatic="False">
+        <Transform id="0x000075A0" position="(0.00, 0.00, 0.00)" rotation="(0.00, 0.00, 0.00)" scale="(1.00, 1.00, 1.00)" />
+        <gameobjects>
+          <GameObject name="AtBase" id="0x0000750C" layer="0" activeInHierarchy="True" isStatic="False">
+            <Transform id="0x00007514" position="(0.00, 0.00, 0.00)" rotation="(0.00, 0.00, 0.00)" scale="(1.10, 1.10, 1.10)" />
+            <components>
+              <Component type="µ.MeshFilter" id="0x00007512">
+                <property name="m_Mesh" type="µ.Mesh" sp-name="Mesh" sp-type="ObjectReference" target-id="0x0000007C">Sphere (µ.Mesh)</property>
+              </Component>
+              <Component type="µ.MeshRenderer" id="0x00007510">
+                <extends>µ.Renderer</extends>
+              </Component>
+              <Component type="µ.SphereCollider" id="0x0000750E">
+                <extends>µ.Collider</extends>
+              </Component>
+              <MonoBehaviour type="NodePrimitive" id="0x00007516" enabled="True" isActiveAndEnabled="True" />
+            </components>
+          </GameObject>
+          <GameObject name="R1" id="0x00007556" layer="0" activeInHierarchy="True" isStatic="False">
+            <Transform id="0x00007560" position="(0.00, 2.00, 0.00)" rotation="(0.00, 0.00, 0.00)" scale="(1.00, 2.00, 1.00)" />
+            <components>
+              <Component type="µ.MeshFilter" id="0x0000755E">
+                <property name="m_Mesh" type="µ.Mesh" sp-name="Mesh" sp-type="ObjectReference" target-id="0x0000007A">Cylinder (µ.Mesh)</property>
+              </Component>
+              <Component type="µ.MeshRenderer" id="0x0000755C">
+                <extends>µ.Renderer</extends>
+              </Component>
+              <Component type="µ.CapsuleCollider" id="0x0000755A">
+                <extends>µ.Collider</extends>
+              </Component>
+              <MonoBehaviour type="NodePrimitive" id="0x00007558" enabled="True" isActiveAndEnabled="True" />
+            </components>
+          </GameObject>
+        </gameobjects>
+      </GameObject>
+      <GameObject name="ChildrenList" id="0x0000756C" layer="0" activeInHierarchy="True" isStatic="False">
+        <Transform id="0x0000756E" position="(0.00, 0.00, 0.00)" rotation="(0.00, 0.00, 0.00)" scale="(1.00, 1.00, 1.00)" />
+        <gameobjects>
+          <GameObject name="MidNode" id="0x000075BA" layer="0" activeInHierarchy="True" isStatic="False">
+            <Transform id="0x000075BE" position="(0.00, 0.00, 0.00)" rotation="(0.00, 0.00, 0.00)" scale="(1.00, 1.00, 1.00)" />
+            <components>
+              <MonoBehaviour type="SceneNode" id="0x000075BC" enabled="True" isActiveAndEnabled="True" />
+            </components>
+            <gameobjects>
+              <GameObject name="PrimitiveList" id="0x00007542" layer="0" activeInHierarchy="True" isStatic="False">
+                <Transform id="0x00007544" position="(0.00, 0.00, 0.00)" rotation="(0.00, 0.00, 0.00)" scale="(1.00, 1.00, 1.00)" />
+                <gameobjects>
+                  <GameObject name="AtMid" id="0x0000758C" layer="0" activeInHierarchy="True" isStatic="False">
+                    <Transform id="0x0000758E" position="(0.00, 0.00, 0.00)" rotation="(0.00, 0.00, 0.00)" scale="(1.10, 1.10, 1.10)" />
+                    <components>
+                      <Component type="µ.MeshFilter" id="0x00007596">
+                        <property name="m_Mesh" type="µ.Mesh" sp-name="Mesh" sp-type="ObjectReference" target-id="0x0000007C">Sphere (µ.Mesh)</property>
+                      </Component>
+                      <Component type="µ.MeshRenderer" id="0x00007594">
+                        <extends>µ.Renderer</extends>
+                      </Component>
+                      <Component type="µ.SphereCollider" id="0x00007592">
+                        <extends>µ.Collider</extends>
+                      </Component>
+                      <MonoBehaviour type="NodePrimitive" id="0x00007590" enabled="True" isActiveAndEnabled="True" />
+                    </components>
+                  </GameObject>
+                  <GameObject name="R2" id="0x0000757E" layer="0" activeInHierarchy="True" isStatic="False">
+                    <Transform id="0x00007580" position="(0.00, 1.00, 0.00)" rotation="(0.00, 0.00, 0.00)" scale="(1.00, 1.00, 1.00)" />
+                    <components>
+                      <Component type="µ.MeshFilter" id="0x00007588">
+                        <property name="m_Mesh" type="µ.Mesh" sp-name="Mesh" sp-type="ObjectReference" target-id="0x0000007A">Cylinder (µ.Mesh)</property>
+                      </Component>
+                      <Component type="µ.MeshRenderer" id="0x00007586">
+                        <extends>µ.Renderer</extends>
+                      </Component>
+                      <Component type="µ.CapsuleCollider" id="0x00007584">
+                        <extends>µ.Collider</extends>
+                      </Component>
+                      <MonoBehaviour type="NodePrimitive" id="0x00007582" enabled="True" isActiveAndEnabled="True" />
+                    </components>
+                  </GameObject>
+                </gameobjects>
+              </GameObject>
+              <GameObject name="ChildrenList" id="0x00007552" layer="0" activeInHierarchy="True" isStatic="False">
+                <Transform id="0x00007554" position="(0.00, 0.00, 0.00)" rotation="(0.00, 0.00, 0.00)" scale="(1.00, 1.00, 1.00)" />
+                <gameobjects>
+                  <GameObject name="TopNode" id="0x00007526" layer="0" activeInHierarchy="True" isStatic="False">
+                    <Transform id="0x00007528" position="(0.00, 0.00, 0.00)" rotation="(0.00, 0.00, 0.00)" scale="(1.00, 1.00, 1.00)" />
+                    <components>
+                      <MonoBehaviour type="SceneNode" id="0x0000752A" enabled="True" isActiveAndEnabled="True" />
+                    </components>
+                    <gameobjects>
+                      <GameObject name="PrimitiveList" id="0x00007568" layer="0" activeInHierarchy="True" isStatic="False">
+                        <Transform id="0x0000756A" position="(0.00, 0.00, 0.00)" rotation="(0.00, 0.00, 0.00)" scale="(1.00, 1.00, 1.00)" />
+                        <gameobjects>
+                          <GameObject name="R3" id="0x0000751A" layer="0" activeInHierarchy="True" isStatic="False">
+                            <Transform id="0x0000751C" position="(0.00, 1.50, 0.00)" rotation="(0.00, 0.00, 0.00)" scale="(1.00, 1.50, 1.00)" />
+                            <components>
+                              <Component type="µ.MeshFilter" id="0x00007524">
+                                <property name="m_Mesh" type="µ.Mesh" sp-name="Mesh" sp-type="ObjectReference" target-id="0x0000007A">Cylinder (µ.Mesh)</property>
+                              </Component>
+                              <Component type="µ.MeshRenderer" id="0x00007522">
+                                <extends>µ.Renderer</extends>
+                              </Component>
+                              <Component type="µ.CapsuleCollider" id="0x00007520">
+                                <extends>µ.Collider</extends>
+                              </Component>
+                              <MonoBehaviour type="NodePrimitive" id="0x0000751E" enabled="True" isActiveAndEnabled="True" />
+                            </components>
+                          </GameObject>
+                          <GameObject name="AtTop" id="0x00007570" layer="0" activeInHierarchy="True" isStatic="False">
+                            <Transform id="0x00007572" position="(0.00, 0.00, 0.00)" rotation="(0.00, 0.00, 0.00)" scale="(1.10, 1.10, 1.10)" />
+                            <components>
+                              <Component type="µ.MeshFilter" id="0x0000757A">
+                                <property name="m_Mesh" type="µ.Mesh" sp-name="Mesh" sp-type="ObjectReference" target-id="0x0000007C">Sphere (µ.Mesh)</property>
+                              </Component>
+                              <Component type="µ.MeshRenderer" id="0x00007578">
+                                <extends>µ.Renderer</extends>
+                              </Component>
+                              <Component type="µ.SphereCollider" id="0x00007576">
+                                <extends>µ.Collider</extends>
+                              </Component>
+                              <MonoBehaviour type="NodePrimitive" id="0x00007574" enabled="True" isActiveAndEnabled="True" />
+                            </components>
+                          </GameObject>
+                        </gameobjects>
+                      </GameObject>
+                      <GameObject name="ChildrenList" id="0x0000753E" layer="0" activeInHierarchy="True" isStatic="False">
+                        <Transform id="0x00007540" position="(0.00, 0.00, 0.00)" rotation="(0.00, 0.00, 0.00)" scale="(1.00, 1.00, 1.00)" />
+                        <gameobjects>
+                          <GameObject name="TipNode" id="0x000075A8" layer="0" activeInHierarchy="True" isStatic="False">
+                            <Transform id="0x000075AA" position="(0.00, 0.00, 0.00)" rotation="(0.00, 0.00, 0.00)" scale="(1.00, 1.00, 1.00)" />
+                            <components>
+                              <MonoBehaviour type="SceneNode" id="0x000075AC" enabled="True" isActiveAndEnabled="True" />
+                            </components>
+                            <gameobjects>
+                              <GameObject name="PrimitiveList" id="0x000075C4" layer="0" activeInHierarchy="True" isStatic="False">
+                                <Transform id="0x000075C6" position="(0.00, 0.00, 0.00)" rotation="(0.00, 0.00, 0.00)" scale="(1.00, 1.00, 1.00)" />
+                                <gameobjects>
+                                  <GameObject name="R4" id="0x00007546" layer="0" activeInHierarchy="True" isStatic="False">
+                                    <Transform id="0x00007548" position="(0.00, 0.50, 0.00)" rotation="(0.00, 0.00, 0.00)" scale="(0.50, 1.00, 0.50)" />
+                                    <components>
+                                      <Component type="µ.MeshFilter" id="0x00007550">
+                                        <property name="m_Mesh" type="µ.Mesh" sp-name="Mesh" sp-type="ObjectReference" target-id="0x0000007C">Sphere (µ.Mesh)</property>
+                                      </Component>
+                                      <Component type="µ.MeshRenderer" id="0x0000754E">
+                                        <extends>µ.Renderer</extends>
+                                      </Component>
+                                      <Component type="µ.SphereCollider" id="0x0000754C">
+                                        <extends>µ.Collider</extends>
+                                      </Component>
+                                      <MonoBehaviour type="NodePrimitive" id="0x0000754A" enabled="True" isActiveAndEnabled="True" />
+                                    </components>
+                                  </GameObject>
+                                  <GameObject name="AtTip" id="0x00007532" layer="0" activeInHierarchy="True" isStatic="False">
+                                    <Transform id="0x00007534" position="(0.00, 0.00, 0.00)" rotation="(0.00, 0.00, 0.00)" scale="(0.60, 0.60, 0.60)" />
+                                    <components>
+                                      <Component type="µ.MeshFilter" id="0x0000753C">
+                                        <property name="m_Mesh" type="µ.Mesh" sp-name="Mesh" sp-type="ObjectReference" target-id="0x0000007C">Sphere (µ.Mesh)</property>
+                                      </Component>
+                                      <Component type="µ.MeshRenderer" id="0x0000753A">
+                                        <extends>µ.Renderer</extends>
+                                      </Component>
+                                      <Component type="µ.SphereCollider" id="0x00007538">
+                                        <extends>µ.Collider</extends>
+                                      </Component>
+                                      <MonoBehaviour type="NodePrimitive" id="0x00007536" enabled="True" isActiveAndEnabled="True" />
+                                    </components>
+                                  </GameObject>
+                                </gameobjects>
+                              </GameObject>
+                              <GameObject name="ChildrenList" id="0x000075C0" layer="0" activeInHierarchy="True" isStatic="False">
+                                <Transform id="0x000075C2" position="(0.00, 0.00, 0.00)" rotation="(0.00, 0.00, 0.00)" scale="(1.00, 1.00, 1.00)" />
+                              </GameObject>
+                            </gameobjects>
+                          </GameObject>
+                        </gameobjects>
+                      </GameObject>
+                    </gameobjects>
+                  </GameObject>
+                </gameobjects>
+              </GameObject>
+            </gameobjects>
+          </GameObject>
+        </gameobjects>
+      </GameObject>
+    </gameobjects>
+  </GameObject>
+  <references />
+</Scene>

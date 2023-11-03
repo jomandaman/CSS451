@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Scene version="1" xmlns="http://pantherkitty.software/xml/unity-scene/1.0">
+  <GameObject name="BaseNode" id="0x0000752C" layer="0" activeInHierarchy="True" isStatic="False">
+    <gameobjects>
+      <GameObject name="PrimitiveList" id="0x0000759E" layer="0" activeInHierarchy="True" isStatic="False">
+        <gameobjects>
+          <GameObject name="AtBase" id="0x0000750C" layer="0" activeInHierarchy="True" isStatic="False">
+            <components>
+              <Component type="µ.MeshFilter" id="0x00007512">
+                <property name="m_Mesh" type="µ.Mesh" sp-name="Mesh" sp-type="ObjectReference" target-id="0x0000007C">
+                </property>
+              </Component>
+            </components>
+          </GameObject>
+          <GameObject name="R1" id="0x00007556" layer="0" activeInHierarchy="True" isStatic="False">
+            <components>
+              <Component type="µ.MeshFilter" id="0x0000755E">
+                <property name="m_Mesh" type="µ.Mesh" sp-name="Mesh" sp-type="ObjectReference" target-id="0x0000007A">
+                </property>
+              </Component>
+            </components>
+          </GameObject>
+        </gameobjects>
+      </GameObject>
+      <GameObject name="ChildrenList" id="0x0000756C" layer="0" activeInHierarchy="True" isStatic="False">
+        <gameobjects>
+          <GameObject name="MidNode" id="0x000075BA" layer="0" activeInHierarchy="True" isStatic="False">
+            <gameobjects>
+              <GameObject name="PrimitiveList" id="0x00007542" layer="0" activeInHierarchy="True" isStatic="False">
+                <gameobjects>
+                  <GameObject name="AtMid" id="0x0000758C" layer="0" activeInHierarchy="True" isStatic="False">
+                    <components>
+                      <Component type="µ.MeshFilter" id="0x00007596">
+                        <property name="m_Mesh" type="µ.Mesh" sp-name="Mesh" sp-type="ObjectReference" target-id="0x0000007C">
+                        </property>
+                      </Component>
+                    </components>
+                  </GameObject>
+                  <GameObject name="R2" id="0x0000757E" layer="0" activeInHierarchy="True" isStatic="False">
+                    <components>
+                      <Component type="µ.MeshFilter" id="0x00007588">
+                        <property name="m_Mesh" type="µ.Mesh" sp-name="Mesh" sp-type="ObjectReference" target-id="0x0000007A">
+                        </property>
+                      </Component>
+                    </components>
+                  </GameObject>
+                </gameobjects>
+              </GameObject>
+              <GameObject name="ChildrenList" id="0x00007552" layer="0" activeInHierarchy="True" isStatic="False">
+                <gameobjects>
+                  <GameObject name="TopNode" id="0x00007526" layer="0" activeInHierarchy="True" isStatic="False">
+                    <gameobjects>
+                      <GameObject name="PrimitiveList" id="0x00007568" layer="0" activeInHierarchy="True" isStatic="False">
+                        <gameobjects>
+                          <GameObject name="R3" id="0x0000751A" layer="0" activeInHierarchy="True" isStatic="False">
+                            <components>
+                              <Component type="µ.MeshFilter" id="0x00007524">
+                                <property name="m_Mesh" type="µ.Mesh" sp-name="Mesh" sp-type="ObjectReference" target-id="0x0000007A">
+                                </property>
+                              </Component>
+                            </components>
+                          </GameObject>
+                          <GameObject name="AtTop" id="0x00007570" layer="0" activeInHierarchy="True" isStatic="False">
+                            <components>
+                              <Component type="µ.MeshFilter" id="0x0000757A">
+                                <property name="m_Mesh" type="µ.Mesh" sp-name="Mesh" sp-type="ObjectReference" target-id="0x0000007C">
+                                </property>
+                              </Component>
+                            </components>
+                          </GameObject>
+                        </gameobjects>
+                      </GameObject>
+                      <GameObject name="ChildrenList" id="0x0000753E" layer="0" activeInHierarchy="True" isStatic="False">
+                        <gameobjects>
+                          <GameObject name="TipNode" id="0x000075A8" layer="0" activeInHierarchy="True" isStatic="False">
+                            <gameobjects>
+                              <GameObject name="PrimitiveList" id="0x000075C4" layer="0" activeInHierarchy="True" isStatic="False">
+                                <gameobjects>
+                                  <GameObject name="R4" id="0x00007546" layer="0" activeInHierarchy="True" isStatic="False">
+                                    <components>
+                                      <Component type="µ.MeshFilter" id="0x00007550">
+                                        <property name="m_Mesh" type="µ.Mesh" sp-name="Mesh" sp-type="ObjectReference" target-id="0x0000007C">
+                                        </property>
+                                      </Component>
+                                    </components>
+                                  </GameObject>
+                                  <GameObject name="AtTip" id="0x00007532" layer="0" activeInHierarchy="True" isStatic="False">
+                                    <components>
+                                      <Component type="µ.MeshFilter" id="0x0000753C">
+                                        <property name="m_Mesh" type="µ.Mesh" sp-name="Mesh" sp-type="ObjectReference" target-id="0x0000007C">
+                                        </property>
+                                      </Component>
+                                    </components>
+                                  </GameObject>
+                                </gameobjects>
+                              </GameObject>
+                            </gameobjects>
+                          </GameObject>
+                        </gameobjects>
+                      </GameObject>
+                    </gameobjects>
+                  </GameObject>
+                </gameobjects>
+              </GameObject>
+            </gameobjects>
+          </GameObject>
+        </gameobjects>
+      </GameObject>
+    </gameobjects>
+  </GameObject>
+</Scene>
