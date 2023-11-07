@@ -1,0 +1,655 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Scene version="1" xmlns="http://pantherkitty.software/xml/unity-scene/1.0">
+  <GameObject name="MainCanvas" id="0x000074B4" layer="5" activeInHierarchy="True" isStatic="False">
+    <gameobjects>
+      <GameObject name="SceneNodeControl" id="0x000073F4" layer="5" activeInHierarchy="True" isStatic="False" prefab="Regular">
+        <components>
+          <MonoBehaviour type="µ.UI.Image" id="0x000073FA" prefab="Regular" enabled="True" isActiveAndEnabled="True">
+            <property name="m_Sprite" type="µ.Sprite" sp-name="Sprite" sp-type="ObjectReference" target-id="0x0000024E">
+            </property>
+          </MonoBehaviour>
+          <MonoBehaviour type="SceneNodeControl" id="0x000073F8" prefab="Regular" enabled="True" isActiveAndEnabled="True">
+            <property name="TheMenu" type="TMPro.TMP_Dropdown" target-name="SelectMenu" target-id="0x000074D8" sp-name="The Menu" sp-type="ObjectReference">
+            </property>
+            <property name="TheRoot" type="SceneNode" target-name="BaseNode" target-id="0x00007316" sp-name="The Root" sp-type="ObjectReference">
+            </property>
+            <property name="XformControl" type="XfromControl" target-name="XfromControl" target-id="0x00007496" sp-name="Xform Control" sp-type="ObjectReference">
+            </property>
+          </MonoBehaviour>
+        </components>
+        <gameobjects>
+          <GameObject name="SelectMenu" id="0x000074D4" layer="5" activeInHierarchy="True" isStatic="False" prefab="Regular">
+            <components>
+              <MonoBehaviour type="µ.UI.Image" id="0x000074DA" prefab="Regular" enabled="True" isActiveAndEnabled="True">
+                <property name="m_Sprite" type="µ.Sprite" sp-name="Sprite" sp-type="ObjectReference" target-id="0x0000024A">
+                </property>
+              </MonoBehaviour>
+              <MonoBehaviour type="TMPro.TMP_Dropdown" id="0x000074D8" prefab="Regular" enabled="True" isActiveAndEnabled="True">
+                <property name="m_TargetGraphic" type="µ.UI.Image" target-name="SelectMenu" target-id="0x000074DA" sp-name="Target Graphic" sp-type="ObjectReference">
+                </property>
+                <property name="m_Template" type="µ.RectTransform" target-name="Template" target-id="0x00007486" sp-name="Template" sp-type="ObjectReference">
+                </property>
+                <property name="m_CaptionText" type="TMPro.TextMeshProUGUI" target-name="Label" target-id="0x000072EC" sp-name="Caption Text" sp-type="ObjectReference">
+                </property>
+                <property name="m_ItemText" type="TMPro.TextMeshProUGUI" target-name="Item Label" target-id="0x000073D8" sp-name="Item Text" sp-type="ObjectReference">
+                </property>
+              </MonoBehaviour>
+            </components>
+            <gameobjects>
+              <GameObject name="Label" id="0x000072E8" layer="5" activeInHierarchy="True" isStatic="False" prefab="Regular">
+                <components>
+                  <MonoBehaviour type="TMPro.TextMeshProUGUI" id="0x000072EC" prefab="Regular" enabled="True" isActiveAndEnabled="True">
+                    <property name="m_fontAsset" type="TMPro.TMP_FontAsset" sp-name="Font Asset" sp-type="ObjectReference" target-id="0x00006EBE">
+                    </property>
+                    <property name="m_sharedMaterial" type="µ.Material" sp-name="Shared Material" sp-type="ObjectReference" target-id="0x00006EC4">
+                    </property>
+                  </MonoBehaviour>
+                </components>
+              </GameObject>
+              <GameObject name="Arrow" id="0x00007534" layer="5" activeInHierarchy="True" isStatic="False" prefab="Regular">
+                <components>
+                  <MonoBehaviour type="µ.UI.Image" id="0x00007538" prefab="Regular" enabled="True" isActiveAndEnabled="True">
+                    <property name="m_Sprite" type="µ.Sprite" sp-name="Sprite" sp-type="ObjectReference" target-id="0x0000025A">
+                    </property>
+                  </MonoBehaviour>
+                </components>
+              </GameObject>
+              <GameObject name="Template" id="0x00007484" layer="5" activeInHierarchy="False" isStatic="False" prefab="Regular">
+                <components>
+                  <MonoBehaviour type="µ.UI.Image" id="0x0000748A" prefab="Regular" enabled="True" isActiveAndEnabled="False">
+                    <property name="m_Sprite" type="µ.Sprite" sp-name="Sprite" sp-type="ObjectReference" target-id="0x0000024A">
+                    </property>
+                  </MonoBehaviour>
+                  <MonoBehaviour type="µ.UI.ScrollRect" id="0x00007488" prefab="Regular" enabled="True" isActiveAndEnabled="False">
+                    <property name="m_Content" type="µ.RectTransform" target-name="Content" target-id="0x000073B8" sp-name="Content" sp-type="ObjectReference">
+                    </property>
+                    <property name="m_Viewport" type="µ.RectTransform" target-name="Viewport" target-id="0x0000752C" sp-name="Viewport" sp-type="ObjectReference">
+                    </property>
+                    <property name="m_VerticalScrollbar" type="µ.UI.Scrollbar" target-name="Scrollbar" target-id="0x00007470" sp-name="Vertical Scrollbar" sp-type="ObjectReference">
+                    </property>
+                  </MonoBehaviour>
+                </components>
+                <gameobjects>
+                  <GameObject name="Viewport" id="0x0000752A" layer="5" activeInHierarchy="False" isStatic="False" prefab="Regular">
+                    <components>
+                      <MonoBehaviour type="µ.UI.Image" id="0x0000752E" prefab="Regular" enabled="True" isActiveAndEnabled="False">
+                        <property name="m_Sprite" type="µ.Sprite" sp-name="Sprite" sp-type="ObjectReference" target-id="0x0000025E">
+                        </property>
+                      </MonoBehaviour>
+                    </components>
+                    <gameobjects>
+                      <GameObject name="Content" id="0x000073B6" layer="5" activeInHierarchy="False" isStatic="False" prefab="Regular">
+                        <gameobjects>
+                          <GameObject name="Item" id="0x000074A4" layer="5" activeInHierarchy="False" isStatic="False" prefab="Regular">
+                            <components>
+                              <MonoBehaviour type="µ.UI.Toggle" id="0x000074A8" prefab="Regular" enabled="True" isActiveAndEnabled="False">
+                                <property name="m_TargetGraphic" type="µ.UI.Image" target-name="Item Background" target-id="0x000074FE" sp-name="Target Graphic" sp-type="ObjectReference">
+                                </property>
+                                <property name="graphic" type="µ.UI.Image" target-name="Item Checkmark" target-id="0x00007506" sp-name="Graphic" sp-type="ObjectReference">
+                                </property>
+                              </MonoBehaviour>
+                            </components>
+                            <gameobjects>
+                              <GameObject name="Item Checkmark" id="0x00007502" layer="5" activeInHierarchy="False" isStatic="False" prefab="Regular">
+                                <components>
+                                  <MonoBehaviour type="µ.UI.Image" id="0x00007506" prefab="Regular" enabled="True" isActiveAndEnabled="False">
+                                    <property name="m_Sprite" type="µ.Sprite" sp-name="Sprite" sp-type="ObjectReference" target-id="0x00000246">
+                                    </property>
+                                  </MonoBehaviour>
+                                </components>
+                              </GameObject>
+                              <GameObject name="Item Label" id="0x000073D4" layer="5" activeInHierarchy="False" isStatic="False" prefab="Regular">
+                                <components>
+                                  <MonoBehaviour type="TMPro.TextMeshProUGUI" id="0x000073D8" prefab="Regular" enabled="True" isActiveAndEnabled="False">
+                                    <property name="m_fontAsset" type="TMPro.TMP_FontAsset" sp-name="Font Asset" sp-type="ObjectReference" target-id="0x00006EBE">
+                                    </property>
+                                    <property name="m_sharedMaterial" type="µ.Material" sp-name="Shared Material" sp-type="ObjectReference" target-id="0x00006EC4">
+                                    </property>
+                                  </MonoBehaviour>
+                                </components>
+                              </GameObject>
+                            </gameobjects>
+                          </GameObject>
+                        </gameobjects>
+                      </GameObject>
+                    </gameobjects>
+                  </GameObject>
+                  <GameObject name="Scrollbar" id="0x0000746C" layer="5" activeInHierarchy="False" isStatic="False" prefab="Regular">
+                    <components>
+                      <MonoBehaviour type="µ.UI.Image" id="0x00007472" prefab="Regular" enabled="True" isActiveAndEnabled="False">
+                        <property name="m_Sprite" type="µ.Sprite" sp-name="Sprite" sp-type="ObjectReference" target-id="0x0000024E">
+                        </property>
+                      </MonoBehaviour>
+                      <MonoBehaviour type="µ.UI.Scrollbar" id="0x00007470" prefab="Regular" enabled="True" isActiveAndEnabled="False">
+                        <property name="m_TargetGraphic" type="µ.UI.Image" target-name="Handle" target-id="0x00007382" sp-name="Target Graphic" sp-type="ObjectReference">
+                        </property>
+                        <property name="m_HandleRect" type="µ.RectTransform" target-name="Handle" target-id="0x00007380" sp-name="Handle Rect" sp-type="ObjectReference">
+                        </property>
+                      </MonoBehaviour>
+                    </components>
+                    <gameobjects>
+                      <GameObject name="Sliding Area" id="0x000074BE" layer="5" activeInHierarchy="False" isStatic="False" prefab="Regular">
+                        <gameobjects>
+                          <GameObject name="Handle" id="0x0000737E" layer="5" activeInHierarchy="False" isStatic="False" prefab="Regular">
+                            <components>
+                              <MonoBehaviour type="µ.UI.Image" id="0x00007382" prefab="Regular" enabled="True" isActiveAndEnabled="False">
+                                <property name="m_Sprite" type="µ.Sprite" sp-name="Sprite" sp-type="ObjectReference" target-id="0x0000024A">
+                                </property>
+                              </MonoBehaviour>
+                            </components>
+                          </GameObject>
+                        </gameobjects>
+                      </GameObject>
+                    </gameobjects>
+                  </GameObject>
+                </gameobjects>
+              </GameObject>
+            </gameobjects>
+          </GameObject>
+          <GameObject name="XfromControl" id="0x00007490" layer="5" activeInHierarchy="True" isStatic="False" prefab="Regular">
+            <components>
+              <MonoBehaviour type="µ.UI.Image" id="0x00007498" prefab="Regular" enabled="True" isActiveAndEnabled="True">
+                <property name="m_Sprite" type="µ.Sprite" sp-name="Sprite" sp-type="ObjectReference" target-id="0x0000024E">
+                </property>
+              </MonoBehaviour>
+              <MonoBehaviour type="XfromControl" id="0x00007496" prefab="Regular" enabled="True" isActiveAndEnabled="True">
+                <property name="T" type="µ.UI.Toggle" target-name="Translate" target-id="0x0000745C" sp-name="T" sp-type="ObjectReference">
+                </property>
+                <property name="R" type="µ.UI.Toggle" target-name="Rotate" target-id="0x0000733C" sp-name="R" sp-type="ObjectReference">
+                </property>
+                <property name="S" type="µ.UI.Toggle" target-name="Scale" target-id="0x0000744E" sp-name="S" sp-type="ObjectReference">
+                </property>
+                <property name="X" type="SliderWithEcho" target-name="XSlider" target-id="0x000072CA" sp-name="X" sp-type="ObjectReference">
+                </property>
+                <property name="Y" type="SliderWithEcho" target-name="YSlider" target-id="0x0000732A" sp-name="Y" sp-type="ObjectReference">
+                </property>
+                <property name="Z" type="SliderWithEcho" target-name="ZSlider" target-id="0x00007424" sp-name="Z" sp-type="ObjectReference">
+                </property>
+                <property name="ObjectName" type="TMPro.TextMeshProUGUI" target-name="ObjectName" target-id="0x00007344" sp-name="Object Name" sp-type="ObjectReference">
+                </property>
+              </MonoBehaviour>
+            </components>
+            <gameobjects>
+              <GameObject name="Panel" id="0x0000750E" layer="5" activeInHierarchy="True" isStatic="False" prefab="Regular">
+                <components>
+                  <MonoBehaviour type="µ.UI.Image" id="0x00007512" prefab="Regular" enabled="True" isActiveAndEnabled="True">
+                    <property name="m_Sprite" type="µ.Sprite" sp-name="Sprite" sp-type="ObjectReference" target-id="0x0000024E">
+                    </property>
+                  </MonoBehaviour>
+                </components>
+                <gameobjects>
+                  <GameObject name="ObjectName" id="0x00007340" layer="5" activeInHierarchy="True" isStatic="False" prefab="Regular">
+                    <components>
+                      <MonoBehaviour type="TMPro.TextMeshProUGUI" id="0x00007344" prefab="Regular" enabled="True" isActiveAndEnabled="True">
+                        <property name="m_fontAsset" type="TMPro.TMP_FontAsset" sp-name="Font Asset" sp-type="ObjectReference" target-id="0x00006EBE">
+                        </property>
+                        <property name="m_sharedMaterial" type="µ.Material" sp-name="Shared Material" sp-type="ObjectReference" target-id="0x00006EC4">
+                        </property>
+                      </MonoBehaviour>
+                    </components>
+                  </GameObject>
+                </gameobjects>
+              </GameObject>
+              <GameObject name="Translate" id="0x00007458" layer="5" activeInHierarchy="True" isStatic="False" prefab="Regular">
+                <components>
+                  <MonoBehaviour type="µ.UI.Toggle" id="0x0000745C" prefab="Regular" enabled="True" isActiveAndEnabled="True">
+                    <property name="m_TargetGraphic" type="µ.UI.Image" target-name="Background" target-id="0x000073E0" sp-name="Target Graphic" sp-type="ObjectReference">
+                    </property>
+                    <property name="graphic" type="µ.UI.Image" target-name="Checkmark" target-id="0x000073E8" sp-name="Graphic" sp-type="ObjectReference">
+                    </property>
+                    <property name="m_Group" type="µ.UI.ToggleGroup" target-name="XfromControl" target-id="0x00007494" sp-name="Group" sp-type="ObjectReference">
+                    </property>
+                  </MonoBehaviour>
+                </components>
+                <gameobjects>
+                  <GameObject name="Background" id="0x000073DC" layer="5" activeInHierarchy="True" isStatic="False" prefab="Regular">
+                    <components>
+                      <MonoBehaviour type="µ.UI.Image" id="0x000073E0" prefab="Regular" enabled="True" isActiveAndEnabled="True">
+                        <property name="m_Sprite" type="µ.Sprite" sp-name="Sprite" sp-type="ObjectReference" target-id="0x0000024A">
+                        </property>
+                      </MonoBehaviour>
+                    </components>
+                    <gameobjects>
+                      <GameObject name="Checkmark" id="0x000073E4" layer="5" activeInHierarchy="True" isStatic="False" prefab="Regular">
+                        <components>
+                          <MonoBehaviour type="µ.UI.Image" id="0x000073E8" prefab="Regular" enabled="True" isActiveAndEnabled="True">
+                            <property name="m_Sprite" type="µ.Sprite" sp-name="Sprite" sp-type="ObjectReference" target-id="0x00000246">
+                            </property>
+                          </MonoBehaviour>
+                        </components>
+                      </GameObject>
+                    </gameobjects>
+                  </GameObject>
+                </gameobjects>
+              </GameObject>
+              <GameObject name="Scale" id="0x0000744A" layer="5" activeInHierarchy="True" isStatic="False" prefab="Regular">
+                <components>
+                  <MonoBehaviour type="µ.UI.Toggle" id="0x0000744E" prefab="Regular" enabled="True" isActiveAndEnabled="True">
+                    <property name="m_TargetGraphic" type="µ.UI.Image" target-name="Background" target-id="0x000074F0" sp-name="Target Graphic" sp-type="ObjectReference">
+                    </property>
+                    <property name="graphic" type="µ.UI.Image" target-name="Checkmark" target-id="0x0000741C" sp-name="Graphic" sp-type="ObjectReference">
+                    </property>
+                    <property name="m_Group" type="µ.UI.ToggleGroup" target-name="XfromControl" target-id="0x00007494" sp-name="Group" sp-type="ObjectReference">
+                    </property>
+                  </MonoBehaviour>
+                </components>
+                <gameobjects>
+                  <GameObject name="Background" id="0x000074EC" layer="5" activeInHierarchy="True" isStatic="False" prefab="Regular">
+                    <components>
+                      <MonoBehaviour type="µ.UI.Image" id="0x000074F0" prefab="Regular" enabled="True" isActiveAndEnabled="True">
+                        <property name="m_Sprite" type="µ.Sprite" sp-name="Sprite" sp-type="ObjectReference" target-id="0x0000024A">
+                        </property>
+                      </MonoBehaviour>
+                    </components>
+                    <gameobjects>
+                      <GameObject name="Checkmark" id="0x00007418" layer="5" activeInHierarchy="True" isStatic="False" prefab="Regular">
+                        <components>
+                          <MonoBehaviour type="µ.UI.Image" id="0x0000741C" prefab="Regular" enabled="True" isActiveAndEnabled="True">
+                            <property name="m_Sprite" type="µ.Sprite" sp-name="Sprite" sp-type="ObjectReference" target-id="0x00000246">
+                            </property>
+                          </MonoBehaviour>
+                        </components>
+                      </GameObject>
+                    </gameobjects>
+                  </GameObject>
+                </gameobjects>
+              </GameObject>
+              <GameObject name="Rotate" id="0x00007338" layer="5" activeInHierarchy="True" isStatic="False" prefab="Regular">
+                <components>
+                  <MonoBehaviour type="µ.UI.Toggle" id="0x0000733C" prefab="Regular" enabled="True" isActiveAndEnabled="True">
+                    <property name="m_TargetGraphic" type="µ.UI.Image" target-name="Background" target-id="0x000073A0" sp-name="Target Graphic" sp-type="ObjectReference">
+                    </property>
+                    <property name="graphic" type="µ.UI.Image" target-name="Checkmark" target-id="0x00007526" sp-name="Graphic" sp-type="ObjectReference">
+                    </property>
+                    <property name="m_Group" type="µ.UI.ToggleGroup" target-name="XfromControl" target-id="0x00007494" sp-name="Group" sp-type="ObjectReference">
+                    </property>
+                  </MonoBehaviour>
+                </components>
+                <gameobjects>
+                  <GameObject name="Background" id="0x0000739C" layer="5" activeInHierarchy="True" isStatic="False" prefab="Regular">
+                    <components>
+                      <MonoBehaviour type="µ.UI.Image" id="0x000073A0" prefab="Regular" enabled="True" isActiveAndEnabled="True">
+                        <property name="m_Sprite" type="µ.Sprite" sp-name="Sprite" sp-type="ObjectReference" target-id="0x0000024A">
+                        </property>
+                      </MonoBehaviour>
+                    </components>
+                    <gameobjects>
+                      <GameObject name="Checkmark" id="0x00007522" layer="5" activeInHierarchy="True" isStatic="False" prefab="Regular">
+                        <components>
+                          <MonoBehaviour type="µ.UI.Image" id="0x00007526" prefab="Regular" enabled="True" isActiveAndEnabled="True">
+                            <property name="m_Sprite" type="µ.Sprite" sp-name="Sprite" sp-type="ObjectReference" target-id="0x00000246">
+                            </property>
+                          </MonoBehaviour>
+                        </components>
+                      </GameObject>
+                    </gameobjects>
+                  </GameObject>
+                </gameobjects>
+              </GameObject>
+              <GameObject name="XSlider" id="0x000072C6" layer="5" activeInHierarchy="True" isStatic="False" prefab="Regular">
+                <components>
+                  <MonoBehaviour type="µ.UI.Image" id="0x000072CC" prefab="Regular" enabled="True" isActiveAndEnabled="True">
+                    <property name="m_Sprite" type="µ.Sprite" sp-name="Sprite" sp-type="ObjectReference" target-id="0x0000024E">
+                    </property>
+                  </MonoBehaviour>
+                  <MonoBehaviour type="SliderWithEcho" id="0x000072CA" prefab="Regular" enabled="True" isActiveAndEnabled="True">
+                    <property name="TheSlider" type="µ.UI.Slider" target-name="Slider" target-id="0x000073C4" sp-name="The Slider" sp-type="ObjectReference">
+                    </property>
+                    <property name="TheEcho" type="TMPro.TextMeshProUGUI" target-name="Echo" target-id="0x0000738A" sp-name="The Echo" sp-type="ObjectReference">
+                    </property>
+                    <property name="TheLabel" type="TMPro.TextMeshProUGUI" target-name="Label" target-id="0x000074AE" sp-name="The Label" sp-type="ObjectReference">
+                    </property>
+                  </MonoBehaviour>
+                </components>
+                <gameobjects>
+                  <GameObject name="Echo" id="0x00007386" layer="5" activeInHierarchy="True" isStatic="False" prefab="Regular">
+                    <components>
+                      <MonoBehaviour type="TMPro.TextMeshProUGUI" id="0x0000738A" prefab="Regular" enabled="True" isActiveAndEnabled="True">
+                        <property name="m_fontAsset" type="TMPro.TMP_FontAsset" sp-name="Font Asset" sp-type="ObjectReference" target-id="0x00006EBE">
+                        </property>
+                        <property name="m_sharedMaterial" type="µ.Material" sp-name="Shared Material" sp-type="ObjectReference" target-id="0x00006EC4">
+                        </property>
+                      </MonoBehaviour>
+                    </components>
+                  </GameObject>
+                  <GameObject name="Label" id="0x000074AA" layer="5" activeInHierarchy="True" isStatic="False" prefab="Regular">
+                    <components>
+                      <MonoBehaviour type="TMPro.TextMeshProUGUI" id="0x000074AE" prefab="Regular" enabled="True" isActiveAndEnabled="True">
+                        <property name="m_fontAsset" type="TMPro.TMP_FontAsset" sp-name="Font Asset" sp-type="ObjectReference" target-id="0x00006EBE">
+                        </property>
+                        <property name="m_sharedMaterial" type="µ.Material" sp-name="Shared Material" sp-type="ObjectReference" target-id="0x00006EC4">
+                        </property>
+                      </MonoBehaviour>
+                    </components>
+                  </GameObject>
+                  <GameObject name="Slider" id="0x000073C0" layer="5" activeInHierarchy="True" isStatic="False" prefab="Regular">
+                    <components>
+                      <MonoBehaviour type="µ.UI.Slider" id="0x000073C4" prefab="Regular" enabled="True" isActiveAndEnabled="True">
+                        <property name="m_TargetGraphic" type="µ.UI.Image" target-name="Handle" target-id="0x00007360" sp-name="Target Graphic" sp-type="ObjectReference">
+                        </property>
+                        <property name="m_FillRect" type="µ.RectTransform" target-name="Fill" target-id="0x0000740C" sp-name="Fill Rect" sp-type="ObjectReference">
+                        </property>
+                        <property name="m_HandleRect" type="µ.RectTransform" target-name="Handle" target-id="0x0000735E" sp-name="Handle Rect" sp-type="ObjectReference">
+                        </property>
+                      </MonoBehaviour>
+                    </components>
+                    <gameobjects>
+                      <GameObject name="Background" id="0x000072F8" layer="5" activeInHierarchy="True" isStatic="False" prefab="Regular">
+                        <components>
+                          <MonoBehaviour type="µ.UI.Image" id="0x000072FC" prefab="Regular" enabled="True" isActiveAndEnabled="True">
+                            <property name="m_Sprite" type="µ.Sprite" sp-name="Sprite" sp-type="ObjectReference" target-id="0x0000024E">
+                            </property>
+                          </MonoBehaviour>
+                        </components>
+                      </GameObject>
+                      <GameObject name="Fill Area" id="0x00007398" layer="5" activeInHierarchy="True" isStatic="False" prefab="Regular">
+                        <gameobjects>
+                          <GameObject name="Fill" id="0x0000740A" layer="5" activeInHierarchy="True" isStatic="False" prefab="Regular">
+                            <components>
+                              <MonoBehaviour type="µ.UI.Image" id="0x0000740E" prefab="Regular" enabled="True" isActiveAndEnabled="True">
+                                <property name="m_Sprite" type="µ.Sprite" sp-name="Sprite" sp-type="ObjectReference" target-id="0x0000024A">
+                                </property>
+                              </MonoBehaviour>
+                            </components>
+                          </GameObject>
+                        </gameobjects>
+                      </GameObject>
+                      <GameObject name="Handle Slide Area" id="0x00007348" layer="5" activeInHierarchy="True" isStatic="False" prefab="Regular">
+                        <gameobjects>
+                          <GameObject name="Handle" id="0x0000735C" layer="5" activeInHierarchy="True" isStatic="False" prefab="Regular">
+                            <components>
+                              <MonoBehaviour type="µ.UI.Image" id="0x00007360" prefab="Regular" enabled="True" isActiveAndEnabled="True">
+                                <property name="m_Sprite" type="µ.Sprite" sp-name="Sprite" sp-type="ObjectReference" target-id="0x00000256">
+                                </property>
+                              </MonoBehaviour>
+                            </components>
+                          </GameObject>
+                        </gameobjects>
+                      </GameObject>
+                    </gameobjects>
+                  </GameObject>
+                </gameobjects>
+              </GameObject>
+              <GameObject name="YSlider" id="0x00007326" layer="5" activeInHierarchy="True" isStatic="False" prefab="Regular">
+                <components>
+                  <MonoBehaviour type="µ.UI.Image" id="0x0000732C" prefab="Regular" enabled="True" isActiveAndEnabled="True">
+                    <property name="m_Sprite" type="µ.Sprite" sp-name="Sprite" sp-type="ObjectReference" target-id="0x0000024E">
+                    </property>
+                  </MonoBehaviour>
+                  <MonoBehaviour type="SliderWithEcho" id="0x0000732A" prefab="Regular" enabled="True" isActiveAndEnabled="True">
+                    <property name="TheSlider" type="µ.UI.Slider" target-name="Slider" target-id="0x00007416" sp-name="The Slider" sp-type="ObjectReference">
+                    </property>
+                    <property name="TheEcho" type="TMPro.TextMeshProUGUI" target-name="Echo" target-id="0x000072E4" sp-name="The Echo" sp-type="ObjectReference">
+                    </property>
+                    <property name="TheLabel" type="TMPro.TextMeshProUGUI" target-name="Label" target-id="0x00007480" sp-name="The Label" sp-type="ObjectReference">
+                    </property>
+                  </MonoBehaviour>
+                </components>
+                <gameobjects>
+                  <GameObject name="Echo" id="0x000072E0" layer="5" activeInHierarchy="True" isStatic="False" prefab="Regular">
+                    <components>
+                      <MonoBehaviour type="TMPro.TextMeshProUGUI" id="0x000072E4" prefab="Regular" enabled="True" isActiveAndEnabled="True">
+                        <property name="m_fontAsset" type="TMPro.TMP_FontAsset" sp-name="Font Asset" sp-type="ObjectReference" target-id="0x00006EBE">
+                        </property>
+                        <property name="m_sharedMaterial" type="µ.Material" sp-name="Shared Material" sp-type="ObjectReference" target-id="0x00006EC4">
+                        </property>
+                      </MonoBehaviour>
+                    </components>
+                  </GameObject>
+                  <GameObject name="Label" id="0x0000747C" layer="5" activeInHierarchy="True" isStatic="False" prefab="Regular">
+                    <components>
+                      <MonoBehaviour type="TMPro.TextMeshProUGUI" id="0x00007480" prefab="Regular" enabled="True" isActiveAndEnabled="True">
+                        <property name="m_fontAsset" type="TMPro.TMP_FontAsset" sp-name="Font Asset" sp-type="ObjectReference" target-id="0x00006EBE">
+                        </property>
+                        <property name="m_sharedMaterial" type="µ.Material" sp-name="Shared Material" sp-type="ObjectReference" target-id="0x00006EC4">
+                        </property>
+                      </MonoBehaviour>
+                    </components>
+                  </GameObject>
+                  <GameObject name="Slider" id="0x00007412" layer="5" activeInHierarchy="True" isStatic="False" prefab="Regular">
+                    <components>
+                      <MonoBehaviour type="µ.UI.Slider" id="0x00007416" prefab="Regular" enabled="True" isActiveAndEnabled="True">
+                        <property name="m_TargetGraphic" type="µ.UI.Image" target-name="Handle" target-id="0x0000751A" sp-name="Target Graphic" sp-type="ObjectReference">
+                        </property>
+                        <property name="m_FillRect" type="µ.RectTransform" target-name="Fill" target-id="0x000073CE" sp-name="Fill Rect" sp-type="ObjectReference">
+                        </property>
+                        <property name="m_HandleRect" type="µ.RectTransform" target-name="Handle" target-id="0x00007518" sp-name="Handle Rect" sp-type="ObjectReference">
+                        </property>
+                      </MonoBehaviour>
+                    </components>
+                    <gameobjects>
+                      <GameObject name="Background" id="0x000073AE" layer="5" activeInHierarchy="True" isStatic="False" prefab="Regular">
+                        <components>
+                          <MonoBehaviour type="µ.UI.Image" id="0x000073B2" prefab="Regular" enabled="True" isActiveAndEnabled="True">
+                            <property name="m_Sprite" type="µ.Sprite" sp-name="Sprite" sp-type="ObjectReference" target-id="0x0000024E">
+                            </property>
+                          </MonoBehaviour>
+                        </components>
+                      </GameObject>
+                      <GameObject name="Fill Area" id="0x000072D0" layer="5" activeInHierarchy="True" isStatic="False" prefab="Regular">
+                        <gameobjects>
+                          <GameObject name="Fill" id="0x000073CC" layer="5" activeInHierarchy="True" isStatic="False" prefab="Regular">
+                            <components>
+                              <MonoBehaviour type="µ.UI.Image" id="0x000073D0" prefab="Regular" enabled="True" isActiveAndEnabled="True">
+                                <property name="m_Sprite" type="µ.Sprite" sp-name="Sprite" sp-type="ObjectReference" target-id="0x0000024A">
+                                </property>
+                              </MonoBehaviour>
+                            </components>
+                          </GameObject>
+                        </gameobjects>
+                      </GameObject>
+                      <GameObject name="Handle Slide Area" id="0x00007330" layer="5" activeInHierarchy="True" isStatic="False" prefab="Regular">
+                        <gameobjects>
+                          <GameObject name="Handle" id="0x00007516" layer="5" activeInHierarchy="True" isStatic="False" prefab="Regular">
+                            <components>
+                              <MonoBehaviour type="µ.UI.Image" id="0x0000751A" prefab="Regular" enabled="True" isActiveAndEnabled="True">
+                                <property name="m_Sprite" type="µ.Sprite" sp-name="Sprite" sp-type="ObjectReference" target-id="0x00000256">
+                                </property>
+                              </MonoBehaviour>
+                            </components>
+                          </GameObject>
+                        </gameobjects>
+                      </GameObject>
+                    </gameobjects>
+                  </GameObject>
+                </gameobjects>
+              </GameObject>
+              <GameObject name="ZSlider" id="0x00007420" layer="5" activeInHierarchy="True" isStatic="False" prefab="Regular">
+                <components>
+                  <MonoBehaviour type="µ.UI.Image" id="0x00007426" prefab="Regular" enabled="True" isActiveAndEnabled="True">
+                    <property name="m_Sprite" type="µ.Sprite" sp-name="Sprite" sp-type="ObjectReference" target-id="0x0000024E">
+                    </property>
+                  </MonoBehaviour>
+                  <MonoBehaviour type="SliderWithEcho" id="0x00007424" prefab="Regular" enabled="True" isActiveAndEnabled="True">
+                    <property name="TheSlider" type="µ.UI.Slider" target-name="Slider" target-id="0x000074EA" sp-name="The Slider" sp-type="ObjectReference">
+                    </property>
+                    <property name="TheEcho" type="TMPro.TextMeshProUGUI" target-name="Echo" target-id="0x00007454" sp-name="The Echo" sp-type="ObjectReference">
+                    </property>
+                    <property name="TheLabel" type="TMPro.TextMeshProUGUI" target-name="Label" target-id="0x0000742E" sp-name="The Label" sp-type="ObjectReference">
+                    </property>
+                  </MonoBehaviour>
+                </components>
+                <gameobjects>
+                  <GameObject name="Echo" id="0x00007450" layer="5" activeInHierarchy="True" isStatic="False" prefab="Regular">
+                    <components>
+                      <MonoBehaviour type="TMPro.TextMeshProUGUI" id="0x00007454" prefab="Regular" enabled="True" isActiveAndEnabled="True">
+                        <property name="m_fontAsset" type="TMPro.TMP_FontAsset" sp-name="Font Asset" sp-type="ObjectReference" target-id="0x00006EBE">
+                        </property>
+                        <property name="m_sharedMaterial" type="µ.Material" sp-name="Shared Material" sp-type="ObjectReference" target-id="0x00006EC4">
+                        </property>
+                      </MonoBehaviour>
+                    </components>
+                  </GameObject>
+                  <GameObject name="Label" id="0x0000742A" layer="5" activeInHierarchy="True" isStatic="False" prefab="Regular">
+                    <components>
+                      <MonoBehaviour type="TMPro.TextMeshProUGUI" id="0x0000742E" prefab="Regular" enabled="True" isActiveAndEnabled="True">
+                        <property name="m_fontAsset" type="TMPro.TMP_FontAsset" sp-name="Font Asset" sp-type="ObjectReference" target-id="0x00006EBE">
+                        </property>
+                        <property name="m_sharedMaterial" type="µ.Material" sp-name="Shared Material" sp-type="ObjectReference" target-id="0x00006EC4">
+                        </property>
+                      </MonoBehaviour>
+                    </components>
+                  </GameObject>
+                  <GameObject name="Slider" id="0x000074E6" layer="5" activeInHierarchy="True" isStatic="False" prefab="Regular">
+                    <components>
+                      <MonoBehaviour type="µ.UI.Slider" id="0x000074EA" prefab="Regular" enabled="True" isActiveAndEnabled="True">
+                        <property name="m_TargetGraphic" type="µ.UI.Image" target-name="Handle" target-id="0x000073A8" sp-name="Target Graphic" sp-type="ObjectReference">
+                        </property>
+                        <property name="m_FillRect" type="µ.RectTransform" target-name="Fill" target-id="0x000072F2" sp-name="Fill Rect" sp-type="ObjectReference">
+                        </property>
+                        <property name="m_HandleRect" type="µ.RectTransform" target-name="Handle" target-id="0x000073A6" sp-name="Handle Rect" sp-type="ObjectReference">
+                        </property>
+                      </MonoBehaviour>
+                    </components>
+                    <gameobjects>
+                      <GameObject name="Background" id="0x000074CC" layer="5" activeInHierarchy="True" isStatic="False" prefab="Regular">
+                        <components>
+                          <MonoBehaviour type="µ.UI.Image" id="0x000074D0" prefab="Regular" enabled="True" isActiveAndEnabled="True">
+                            <property name="m_Sprite" type="µ.Sprite" sp-name="Sprite" sp-type="ObjectReference" target-id="0x0000024E">
+                            </property>
+                          </MonoBehaviour>
+                        </components>
+                      </GameObject>
+                      <GameObject name="Fill Area" id="0x00007468" layer="5" activeInHierarchy="True" isStatic="False" prefab="Regular">
+                        <gameobjects>
+                          <GameObject name="Fill" id="0x000072F0" layer="5" activeInHierarchy="True" isStatic="False" prefab="Regular">
+                            <components>
+                              <MonoBehaviour type="µ.UI.Image" id="0x000072F4" prefab="Regular" enabled="True" isActiveAndEnabled="True">
+                                <property name="m_Sprite" type="µ.Sprite" sp-name="Sprite" sp-type="ObjectReference" target-id="0x0000024A">
+                                </property>
+                              </MonoBehaviour>
+                            </components>
+                          </GameObject>
+                        </gameobjects>
+                      </GameObject>
+                      <GameObject name="Handle Slide Area" id="0x000073BC" layer="5" activeInHierarchy="True" isStatic="False" prefab="Regular">
+                        <gameobjects>
+                          <GameObject name="Handle" id="0x000073A4" layer="5" activeInHierarchy="True" isStatic="False" prefab="Regular">
+                            <components>
+                              <MonoBehaviour type="µ.UI.Image" id="0x000073A8" prefab="Regular" enabled="True" isActiveAndEnabled="True">
+                                <property name="m_Sprite" type="µ.Sprite" sp-name="Sprite" sp-type="ObjectReference" target-id="0x00000256">
+                                </property>
+                              </MonoBehaviour>
+                            </components>
+                          </GameObject>
+                        </gameobjects>
+                      </GameObject>
+                    </gameobjects>
+                  </GameObject>
+                </gameobjects>
+              </GameObject>
+            </gameobjects>
+          </GameObject>
+        </gameobjects>
+      </GameObject>
+    </gameobjects>
+  </GameObject>
+  <GameObject name="BaseNode" id="0x00007314" layer="0" activeInHierarchy="True" isStatic="False">
+    <gameobjects>
+      <GameObject name="PrimitiveList" id="0x0000745E" layer="0" activeInHierarchy="True" isStatic="False">
+        <gameobjects>
+          <GameObject name="AtBase" id="0x000072D4" layer="0" activeInHierarchy="True" isStatic="False">
+            <components>
+              <Component type="µ.MeshFilter" id="0x000072DA">
+                <property name="m_Mesh" type="µ.Mesh" sp-name="Mesh" sp-type="ObjectReference" target-id="0x0000007C">
+                </property>
+              </Component>
+            </components>
+          </GameObject>
+          <GameObject name="R1" id="0x00007370" layer="0" activeInHierarchy="True" isStatic="False">
+            <components>
+              <Component type="µ.MeshFilter" id="0x00007378">
+                <property name="m_Mesh" type="µ.Mesh" sp-name="Mesh" sp-type="ObjectReference" target-id="0x0000007A">
+                </property>
+              </Component>
+            </components>
+          </GameObject>
+        </gameobjects>
+      </GameObject>
+      <GameObject name="ChildrenList" id="0x000073F0" layer="0" activeInHierarchy="True" isStatic="False">
+        <gameobjects>
+          <GameObject name="MidNode" id="0x000074F4" layer="0" activeInHierarchy="True" isStatic="False">
+            <gameobjects>
+              <GameObject name="PrimitiveList" id="0x0000734C" layer="0" activeInHierarchy="True" isStatic="False">
+                <gameobjects>
+                  <GameObject name="AtMid" id="0x0000743E" layer="0" activeInHierarchy="True" isStatic="False">
+                    <components>
+                      <Component type="µ.MeshFilter" id="0x00007448">
+                        <property name="m_Mesh" type="µ.Mesh" sp-name="Mesh" sp-type="ObjectReference" target-id="0x0000007C">
+                        </property>
+                      </Component>
+                    </components>
+                  </GameObject>
+                  <GameObject name="R2" id="0x00007432" layer="0" activeInHierarchy="True" isStatic="False">
+                    <components>
+                      <Component type="µ.MeshFilter" id="0x0000743C">
+                        <property name="m_Mesh" type="µ.Mesh" sp-name="Mesh" sp-type="ObjectReference" target-id="0x0000007A">
+                        </property>
+                      </Component>
+                    </components>
+                  </GameObject>
+                </gameobjects>
+              </GameObject>
+              <GameObject name="ChildrenList" id="0x00007364" layer="0" activeInHierarchy="True" isStatic="False">
+                <gameobjects>
+                  <GameObject name="TopNode" id="0x0000730E" layer="0" activeInHierarchy="True" isStatic="False">
+                    <gameobjects>
+                      <GameObject name="PrimitiveList" id="0x000073EC" layer="0" activeInHierarchy="True" isStatic="False">
+                        <gameobjects>
+                          <GameObject name="R3" id="0x00007300" layer="0" activeInHierarchy="True" isStatic="False">
+                            <components>
+                              <Component type="µ.MeshFilter" id="0x0000730A">
+                                <property name="m_Mesh" type="µ.Mesh" sp-name="Mesh" sp-type="ObjectReference" target-id="0x0000007A">
+                                </property>
+                              </Component>
+                            </components>
+                          </GameObject>
+                          <GameObject name="AtTop" id="0x000073FE" layer="0" activeInHierarchy="True" isStatic="False">
+                            <components>
+                              <Component type="µ.MeshFilter" id="0x00007408">
+                                <property name="m_Mesh" type="µ.Mesh" sp-name="Mesh" sp-type="ObjectReference" target-id="0x0000007C">
+                                </property>
+                              </Component>
+                            </components>
+                          </GameObject>
+                        </gameobjects>
+                      </GameObject>
+                      <GameObject name="ChildrenList" id="0x00007334" layer="0" activeInHierarchy="True" isStatic="False">
+                        <gameobjects>
+                          <GameObject name="TipNode" id="0x00007476" layer="0" activeInHierarchy="True" isStatic="False">
+                            <gameobjects>
+                              <GameObject name="PrimitiveList" id="0x0000751E" layer="0" activeInHierarchy="True" isStatic="False">
+                                <gameobjects>
+                                  <GameObject name="R4" id="0x00007350" layer="0" activeInHierarchy="True" isStatic="False">
+                                    <components>
+                                      <Component type="µ.MeshFilter" id="0x0000735A">
+                                        <property name="m_Mesh" type="µ.Mesh" sp-name="Mesh" sp-type="ObjectReference" target-id="0x0000007C">
+                                        </property>
+                                      </Component>
+                                    </components>
+                                  </GameObject>
+                                  <GameObject name="AtTip" id="0x0000731A" layer="0" activeInHierarchy="True" isStatic="False">
+                                    <components>
+                                      <Component type="µ.MeshFilter" id="0x00007324">
+                                        <property name="m_Mesh" type="µ.Mesh" sp-name="Mesh" sp-type="ObjectReference" target-id="0x0000007C">
+                                        </property>
+                                      </Component>
+                                    </components>
+                                  </GameObject>
+                                </gameobjects>
+                              </GameObject>
+                            </gameobjects>
+                          </GameObject>
+                        </gameobjects>
+                      </GameObject>
+                    </gameobjects>
+                  </GameObject>
+                </gameobjects>
+              </GameObject>
+            </gameobjects>
+          </GameObject>
+        </gameobjects>
+      </GameObject>
+    </gameobjects>
+  </GameObject>
+</Scene>
