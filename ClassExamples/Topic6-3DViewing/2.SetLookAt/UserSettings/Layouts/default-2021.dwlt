@@ -368,13 +368,13 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Soruce
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/Soruce
   m_LastFoldersGridSize: -1
   m_LastProjectPath: /Users/josiahzacharias/Documents/School/UW Graduate/CSS 551/Github/CSS451/ClassExamples/Topic6-3DViewing/2.SetLookAt
   m_LockTracker:
@@ -699,7 +699,7 @@ MonoBehaviour:
       containerId: overlay-container--right
       floating: 0
       collapsed: 0
-      displayed: 0
+      displayed: 1
       snapOffset: {x: 0, y: 0}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
@@ -815,9 +815,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 2.6395526, y: -0.93268484, z: -0.80422676}
+    m_Target: {x: 4.6583824, y: 0.43338484, z: 6.290623}
     speed: 2
-    m_Value: {x: 2.6395526, y: -0.93268484, z: -0.80422676}
+    m_Value: {x: 4.4335985, y: 0.30338773, z: 5.5626473}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -864,13 +864,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.21046369, y: 0.5134148, z: -0.13153899, w: -0.82146794}
+    m_Target: {x: -0.35462222, y: 0.40738535, z: -0.17551957, w: -0.8230895}
     speed: 2
     m_Value: {x: -0.21046351, y: 0.5134144, z: -0.13153888, w: -0.8214672}
   m_Size:
-    m_Target: 20.2237
+    m_Target: 34.233395
     speed: 2
-    m_Value: 20.2237
+    m_Value: 32.759228
   m_Ortho:
     m_Target: 0
     speed: 2

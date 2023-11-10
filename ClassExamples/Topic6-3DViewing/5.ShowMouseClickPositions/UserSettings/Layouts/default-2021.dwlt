@@ -386,20 +386,20 @@ MonoBehaviour:
     m_ExpandedIDs: 000000000253000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: Model
+      m_OriginalName: Model
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 21264
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 4
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 0}
+      m_ClientGUIView: {fileID: 8}
     m_SearchString: 
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
@@ -815,9 +815,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 47.89479, y: -13.049172, z: -60.90844}
+    m_Target: {x: 39.718517, y: -23.394878, z: -72.71447}
     speed: 2
-    m_Value: {x: 47.89479, y: -13.049172, z: -60.90844}
+    m_Value: {x: 39.718517, y: -23.394878, z: -72.71447}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -864,11 +864,11 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.26379436, y: 0.0491633, z: -0.0134638315, w: 0.9632322}
+    m_Target: {x: 0.20951651, y: -0.40739745, z: 0.09659771, w: 0.88363075}
     speed: 2
     m_Value: {x: -0.26379436, y: -0.0491633, z: 0.013463831, w: -0.96323216}
   m_Size:
-    m_Target: 75.039604
+    m_Target: 116.53422
     speed: 2
     m_Value: 75.039604
   m_Ortho:
@@ -957,7 +957,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 1
+    m_EnableMouseInput: 0
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1

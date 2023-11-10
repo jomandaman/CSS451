@@ -399,7 +399,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 0}
+      m_ClientGUIView: {fileID: 8}
     m_SearchString: 
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
@@ -503,7 +503,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 0
+  m_LastVerticalScrollValue: 420
   m_GlobalObjectId: 
   m_InspectorMode: 0
   m_LockTracker:
@@ -866,7 +866,7 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: -0.19836262, y: 0.5438781, z: -0.13413969, w: -0.804274}
     speed: 2
-    m_Value: {x: -0.19836262, y: 0.5438781, z: -0.13413969, w: -0.804274}
+    m_Value: {x: -0.1983625, y: 0.5438778, z: -0.13413961, w: -0.80427355}
   m_Size:
     m_Target: 31.406786
     speed: 2
