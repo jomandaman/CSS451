@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<u:Scene version="1" xmlns:u="http://pantherkitty.software/xml/unity-scene/1.0">
+  <u:GameObject name="Main Camera" tag="MainCamera" id="0x0000525A" layer="0" activeInHierarchy="True" isStatic="False">
+    <u:Transform id="0x00005262">
+      <u:Vector3 name="position">
+        <u:x>0</u:x>
+        <u:y>1</u:y>
+        <u:z>-10</u:z>
+      </u:Vector3>
+      <u:Vector3 name="rotation">
+        <u:x>0</u:x>
+        <u:y>0</u:y>
+        <u:z>0</u:z>
+      </u:Vector3>
+      <u:Vector3 name="scale">
+        <u:x>1</u:x>
+        <u:y>1</u:y>
+        <u:z>1</u:z>
+      </u:Vector3>
+    </u:Transform>
+    <u:components>
+      <u:Behaviour type="UnityEngine.Camera" id="0x00005260" enabled="True" isActiveAndEnabled="True">
+        <u:properties>
+          <u:property name="m_ClearFlags" type="System.String" sp-name="Clear Flags" sp-type="Enum" sp-enum-index="0">Skybox</u:property>
+          <u:property name="m_BackGroundColor" type="UnityEngine.Color" sp-name="Back Ground Color">
+            <u:Color name="m_BackGroundColor">
+              <u:r>0.1921569</u:r>
+              <u:g>0.3019608</u:g>
+              <u:b>0.4745098</u:b>
+              <u:a>0</u:a>
+            </u:Color>
+          </u:property>
+          <u:property name="m_projectionMatrixMode" type="System.Int32" sp-name="Projection Matrix Mode">1</u:property>
+          <u:property name="m_GateFitMode" type="System.Int32" sp-name="Gate Fit Mode">2</u:property>
+          <u:property name="m_FOVAxisMode" type="System.Int32" sp-name="FOV Axis Mode">0</u:property>
+          <u:property name="m_SensorSize" type="UnityEngine.Vector2" sp-name="Sensor Size">
+            <u:Vector2 name="m_SensorSize">
+              <u:x>36</u:x>
+              <u:y>24</u:y>
+            </u:Vector2>
+          </u:property>
+          <u:property name="m_LensShift" type="UnityEngine.Vector2" sp-name="Lens Shift">
+            <u:Vector2 name="m_LensShift">
+              <u:x>0</u:x>
+              <u:y>0</u:y>
+            </u:Vector2>
+          </u:property>
+          <u:property name="m_FocalLength" type="System.Single" sp-name="Focal Length">50</u:property>
+          <u:property name="m_NormalizedViewPortRect" type="UnityEngine.Rect" sp-name="Normalized View Port Rect">(x:0.00, y:0.00, width:1.00, height:1.00)</u:property>
+          <u:property name="near clip plane" type="System.Single" sp-name="Near clip plane">0.3</u:property>
+          <u:property name="far clip plane" type="System.Single" sp-name="Far clip plane">1000</u:property>
+          <u:property name="field of view" type="System.Single" sp-name="Field of view">60</u:property>
+          <u:property name="orthographic" type="System.Boolean" sp-name="Orthographic">False</u:property>
+          <u:property name="orthographic size" type="System.Single" sp-name="Orthographic size">5</u:property>
+          <u:property name="m_Depth" type="System.Single" sp-name="Depth">-1</u:property>
+          <u:property name="m_CullingMask" type="System.UInt32" sp-name="Culling Mask">FFFFFFFF</u:property>
+          <u:property name="m_RenderingPath" type="System.String" sp-name="Rendering Path" sp-type="Enum" sp-enum-index="0">Use Graphics Settings</u:property>
+          <u:property name="m_TargetDisplay" type="System.Int32" sp-name="Target Display">0</u:property>
+          <u:property name="m_TargetEye" type="System.Int32" sp-name="Target Eye">3</u:property>
+          <u:property name="m_HDR" type="System.Boolean" sp-name="HDR">False</u:property>
+          <u:property name="m_AllowMSAA" type="System.Boolean" sp-name="Allow MSAA">True</u:property>
+          <u:property name="m_AllowDynamicResolution" type="System.Boolean" sp-name="Allow Dynamic Resolution">False</u:property>
+          <u:property name="m_ForceIntoRT" type="System.Boolean" sp-name="Force Into RT">False</u:property>
+          <u:property name="m_OcclusionCulling" type="System.Boolean" sp-name="Occlusion Culling">True</u:property>
+          <u:property name="m_StereoConvergence" type="System.Single" sp-name="Stereo Convergence">10</u:property>
+          <u:property name="m_StereoSeparation" type="System.Single" sp-name="Stereo Separation">0.022</u:property>
+        </u:properties>
+      </u:Behaviour>
+      <u:Behaviour type="UnityEngine.FlareLayer" id="0x0000525E" enabled="True" isActiveAndEnabled="True">
+        <u:properties />
+      </u:Behaviour>
+      <u:Behaviour type="UnityEngine.AudioListener" id="0x0000525C" enabled="True" isActiveAndEnabled="True">
+        <u:extends>
+          <u:superclass>UnityEngine.AudioBehaviour</u:superclass>
+        </u:extends>
+        <u:properties />
+      </u:Behaviour>
+    </u:components>
+  </u:GameObject>
+  <u:GameObject name="Directional Light" tag="Untagged" id="0x00005276" layer="0" activeInHierarchy="True" isStatic="False">
+    <u:Transform id="0x0000527A">
+      <u:Vector3 name="position">
+        <u:x>0</u:x>
+        <u:y>3</u:y>
+        <u:z>0</u:z>
+      </u:Vector3>
+      <u:Vector3 name="rotation">
+        <u:x>50</u:x>
+        <u:y>330</u:y>
+        <u:z>0</u:z>
+      </u:Vector3>
+      <u:Vector3 name="scale">
+        <u:x>1</u:x>
+        <u:y>1</u:y>
+        <u:z>1</u:z>
+      </u:Vector3>
+    </u:Transform>
+    <u:components>
+      <u:Behaviour type="UnityEngine.Light" id="0x00005278" enabled="True" isActiveAndEnabled="True">
+        <u:properties>
+          <u:property name="m_Type" type="System.String" sp-name="Type" sp-type="Enum" sp-enum-index="1">Directional</u:property>
+          <u:property name="m_Shape" type="System.String" sp-name="Shape" sp-type="Enum" sp-enum-index="0">Cone</u:property>
+          <u:property name="m_Color" type="UnityEngine.Color" sp-name="Color">
+            <u:Color name="m_Color">
+              <u:r>1</u:r>
+              <u:g>0.9568627</u:g>
+              <u:b>0.8392157</u:b>
+              <u:a>1</u:a>
+            </u:Color>
+          </u:property>
+          <u:property name="m_Intensity" type="System.Single" sp-name="Intensity">1</u:property>
+          <u:property name="m_Range" type="System.Single" sp-name="Range">10</u:property>
+          <u:property name="m_SpotAngle" type="System.Single" sp-name="Spot Angle">30</u:property>
+          <u:property name="m_InnerSpotAngle" type="System.Single" sp-name="Inner Spot Angle">21.80208</u:property>
+          <u:property name="m_CookieSize" type="System.Single" sp-name="Cookie Size">10</u:property>
+          <u:property name="m_Shadows" type="scenedump.UnknownType" sp-name="Shadows" sp-type="Generic">«@ToDo:unknown-type[Generic]»</u:property>
+          <u:property name="m_DrawHalo" type="System.Boolean" sp-name="Draw Halo">False</u:property>
+          <u:property name="m_BakingOutput" type="scenedump.UnknownType" sp-name="Baking Output" sp-type="Generic">«@ToDo:unknown-type[Generic]»</u:property>
+          <u:property name="m_RenderMode" type="System.String" sp-name="Render Mode" sp-type="Enum" sp-enum-index="0">Auto</u:property>
+          <u:property name="m_CullingMask" type="System.UInt32" sp-name="Culling Mask">FFFFFFFF</u:property>
+          <u:property name="m_RenderingLayerMask" type="System.Int32" sp-name="Rendering Layer Mask">1</u:property>
+          <u:property name="m_Lightmapping" type="System.String" sp-name="Lightmapping" sp-type="Enum" sp-enum-index="2">Realtime</u:property>
+          <u:property name="m_LightShadowCasterMode" type="System.Int32" sp-name="Light Shadow Caster Mode">0</u:property>
+          <u:property name="m_AreaSize" type="UnityEngine.Vector2" sp-name="Area Size">
+            <u:Vector2 name="m_AreaSize">
+              <u:x>1</u:x>
+              <u:y>1</u:y>
+            </u:Vector2>
+          </u:property>
+          <u:property name="m_BounceIntensity" type="System.Single" sp-name="Bounce Intensity">1</u:property>
+          <u:property name="m_ColorTemperature" type="System.Single" sp-name="Color Temperature">6570</u:property>
+          <u:property name="m_UseColorTemperature" type="System.Boolean" sp-name="Use Color Temperature">False</u:property>
+          <u:property name="m_BoundingSphereOverride" type="UnityEngine.Vector4" sp-name="Bounding Sphere Override">
+            <u:Vector4 name="m_BoundingSphereOverride">
+              <u:w>0</u:w>
+              <u:x>0</u:x>
+              <u:y>0</u:y>
+              <u:z>0</u:z>
+            </u:Vector4>
+          </u:property>
+          <u:property name="m_UseBoundingSphereOverride" type="System.Boolean" sp-name="Use Bounding Sphere Override">False</u:property>
+          <u:property name="m_UseViewFrustumForShadowCasterCull" type="System.Boolean" sp-name="Use View Frustum For Shadow Caster Cull">True</u:property>
+          <u:property name="m_ShadowRadius" type="System.Single" sp-name="Shadow Radius">0</u:property>
+          <u:property name="m_ShadowAngle" type="System.Single" sp-name="Shadow Angle">0</u:property>
+        </u:properties>
+      </u:Behaviour>
+    </u:components>
+  </u:GameObject>
+  <u:GameObject name="MyMesh" tag="Untagged" id="0x00005266" layer="0" activeInHierarchy="True" isStatic="False">
+    <u:Transform id="0x0000526E">
+      <u:Vector3 name="position">
+        <u:x>0</u:x>
+        <u:y>0</u:y>
+        <u:z>0</u:z>
+      </u:Vector3>
+      <u:Vector3 name="rotation">
+        <u:x>0</u:x>
+        <u:y>0</u:y>
+        <u:z>0</u:z>
+      </u:Vector3>
+      <u:Vector3 name="scale">
+        <u:x>1</u:x>
+        <u:y>1</u:y>
+        <u:z>1</u:z>
+      </u:Vector3>
+    </u:Transform>
+    <u:components>
+      <u:Component type="UnityEngine.MeshFilter" id="0x0000526C">
+        <u:properties>
+          <u:property name="m_Mesh" type="UnityEngine.Mesh" sp-name="Mesh" sp-type="ObjectReference" target-id="0x0000024A">Quad (UnityEngine.Mesh)</u:property>
+        </u:properties>
+      </u:Component>
+      <u:Component type="UnityEngine.MeshCollider" id="0x0000526A">
+        <u:extends>
+          <u:superclass>UnityEngine.Collider</u:superclass>
+        </u:extends>
+        <u:properties>
+          <u:property name="m_IsTrigger" type="System.Boolean" sp-name="Is Trigger">False</u:property>
+          <u:property name="m_Convex" type="System.Boolean" sp-name="Convex">False</u:property>
+          <u:property name="m_CookingOptions" type="System.Int32" sp-name="Cooking Options">30</u:property>
+          <u:property name="m_Mesh" type="UnityEngine.Mesh" sp-name="Mesh" sp-type="ObjectReference" target-id="0x0000024A">Quad (UnityEngine.Mesh)</u:property>
+        </u:properties>
+      </u:Component>
+      <u:Component type="UnityEngine.MeshRenderer" id="0x00005268">
+        <u:extends>
+          <u:superclass>UnityEngine.Renderer</u:superclass>
+        </u:extends>
+        <u:properties>
+          <u:property name="m_CastShadows" type="System.String" sp-name="Cast Shadows" sp-type="Enum" sp-enum-index="0">Off</u:property>
+          <u:property name="m_ReceiveShadows" type="System.Boolean" sp-name="Receive Shadows">False</u:property>
+          <u:property name="m_DynamicOccludee" type="System.Boolean" sp-name="Dynamic Occludee">True</u:property>
+          <u:property name="m_StaticShadowCaster" type="System.Boolean" sp-name="Static Shadow Caster">False</u:property>
+          <u:property name="m_MotionVectors" type="System.String" sp-name="Motion Vectors" sp-type="Enum" sp-enum-index="1">Per Object Motion</u:property>
+          <u:property name="m_LightProbeUsage" type="System.Int32" sp-name="Light Probe Usage">1</u:property>
+          <u:property name="m_ReflectionProbeUsage" type="System.Int32" sp-name="Reflection Probe Usage">1</u:property>
+          <u:property name="m_RayTracingMode" type="System.Int32" sp-name="Ray Tracing Mode">2</u:property>
+          <u:property name="m_RayTraceProcedural" type="System.Boolean" sp-name="Ray Trace Procedural">False</u:property>
+          <u:property name="m_RenderingLayerMask" type="System.Int32" sp-name="Rendering Layer Mask">1</u:property>
+          <u:property name="m_RendererPriority" type="System.Int32" sp-name="Renderer Priority">0</u:property>
+          <u:property-array name="m_Materials" type="System.Object[]" dimensions="1" length="1" sp-name="Materials" sp-type="Generic">
+            <u:value name="m_Materials[0]" type="UnityEngine.Material" index="0">451Material (UnityEngine.Material)</u:value>
+          </u:property-array>
+        </u:properties>
+      </u:Component>
+      <u:MonoBehaviour type="CheckerTexture" id="0x00005270" enabled="True" isActiveAndEnabled="True">
+        <u:properties>
+          <u:property name="URepeat" type="System.Single" sp-name="U Repeat">2</u:property>
+          <u:property name="Color1" type="UnityEngine.Color" sp-name="Color 1">
+            <u:Color name="Color1">
+              <u:r>0</u:r>
+              <u:g>0</u:g>
+              <u:b>0</u:b>
+              <u:a>1</u:a>
+            </u:Color>
+          </u:property>
+          <u:property name="VRepeat" type="System.Single" sp-name="V Repeat">2</u:property>
+          <u:property name="Color2" type="UnityEngine.Color" sp-name="Color 2">
+            <u:Color name="Color2">
+              <u:r>1</u:r>
+              <u:g>1</u:g>
+              <u:b>1</u:b>
+              <u:a>1</u:a>
+            </u:Color>
+          </u:property>
+        </u:properties>
+      </u:MonoBehaviour>
+      <u:MonoBehaviour type="MyMesh" id="0x00005272" enabled="True" isActiveAndEnabled="True">
+        <u:properties />
+      </u:MonoBehaviour>
+      <u:MonoBehaviour type="TexturePlacement" id="0x00005274" enabled="True" isActiveAndEnabled="True">
+        <u:properties>
+          <u:property name="Offset" type="UnityEngine.Vector2" sp-name="Offset">
+            <u:Vector2 name="Offset">
+              <u:x>0</u:x>
+              <u:y>0</u:y>
+            </u:Vector2>
+          </u:property>
+          <u:property name="Scale" type="UnityEngine.Vector2" sp-name="Scale">
+            <u:Vector2 name="Scale">
+              <u:x>1</u:x>
+              <u:y>1</u:y>
+            </u:Vector2>
+          </u:property>
+        </u:properties>
+      </u:MonoBehaviour>
+    </u:components>
+  </u:GameObject>
+  <u:references />
+</u:Scene>
