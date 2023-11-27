@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Scene version="1" xmlns="http://pantherkitty.software/xml/unity-scene/1.0">
+  <GameObject name="MyMesh" id="0x0000524E" layer="0" activeInHierarchy="True" isStatic="False">
+    <components>
+      <Component type="µ.MeshFilter" id="0x00005254">
+        <property name="m_Mesh" type="µ.Mesh" sp-name="Mesh" sp-type="ObjectReference" target-id="0x0000024A">
+        </property>
+      </Component>
+      <Component type="µ.MeshCollider" id="0x00005252">
+        <property name="m_Mesh" type="µ.Mesh" sp-name="Mesh" sp-type="ObjectReference" target-id="0x0000024A">
+        </property>
+      </Component>
+    </components>
+  </GameObject>
+</Scene>

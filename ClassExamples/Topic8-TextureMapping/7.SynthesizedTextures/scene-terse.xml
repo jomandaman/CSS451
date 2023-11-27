@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Scene version="1" xmlns="http://pantherkitty.software/xml/unity-scene/1.0">
+  <meta>
+    <value-abbreviation before="&#xA;" after=" •¬ " />
+    <value-abbreviation before="Instance" after="¡" />
+    <value-abbreviation before="UnityEngine." after="µ." />
+    <value-abbreviation before="System." after="§." />
+    <type-abbreviation before="UnityEngine." after="µ." />
+    <type-abbreviation before="System." after="§." />
+  </meta>
+  <GameObject name="Main Camera" tag="MainCamera" id="0x00005242" layer="0" activeInHierarchy="True" isStatic="False">
+    <Transform id="0x0000524A" position="(0.00, 1.00, -10.00)" rotation="(0.00, 0.00, 0.00)" scale="(1.00, 1.00, 1.00)" />
+    <components>
+      <Behaviour type="µ.Camera" id="0x00005248" enabled="True" isActiveAndEnabled="True" />
+      <Behaviour type="µ.FlareLayer" id="0x00005246" enabled="True" isActiveAndEnabled="True" />
+      <Behaviour type="µ.AudioListener" id="0x00005244" enabled="True" isActiveAndEnabled="True">
+        <extends>µ.AudioBehaviour</extends>
+      </Behaviour>
+    </components>
+  </GameObject>
+  <GameObject name="Directional Light" id="0x0000525E" layer="0" activeInHierarchy="True" isStatic="False">
+    <Transform id="0x00005262" position="(0.00, 3.00, 0.00)" rotation="(50.00, 330.00, 0.00)" scale="(1.00, 1.00, 1.00)" />
+    <components>
+      <Behaviour type="µ.Light" id="0x00005260" enabled="True" isActiveAndEnabled="True" />
+    </components>
+  </GameObject>
+  <GameObject name="MyMesh" id="0x0000524E" layer="0" activeInHierarchy="True" isStatic="False">
+    <Transform id="0x00005256" position="(0.00, 0.00, 0.00)" rotation="(0.00, 0.00, 0.00)" scale="(1.00, 1.00, 1.00)" />
+    <components>
+      <Component type="µ.MeshFilter" id="0x00005254">
+        <property name="m_Mesh" type="µ.Mesh" sp-name="Mesh" sp-type="ObjectReference" target-id="0x0000024A">Quad (µ.Mesh)</property>
+      </Component>
+      <Component type="µ.MeshCollider" id="0x00005252">
+        <extends>µ.Collider</extends>
+        <property name="m_Mesh" type="µ.Mesh" sp-name="Mesh" sp-type="ObjectReference" target-id="0x0000024A">Quad (µ.Mesh)</property>
+      </Component>
+      <Component type="µ.MeshRenderer" id="0x00005250">
+        <extends>µ.Renderer</extends>
+      </Component>
+      <MonoBehaviour type="CheckerTexture" id="0x00005258" enabled="True" isActiveAndEnabled="True" />
+      <MonoBehaviour type="MyMesh" id="0x0000525A" enabled="True" isActiveAndEnabled="True" />
+      <MonoBehaviour type="TexturePlacement" id="0x0000525C" enabled="True" isActiveAndEnabled="True" />
+    </components>
+  </GameObject>
+  <references />
+</Scene>
